@@ -1,0 +1,73 @@
+2023-03-09 21:56:55.145 [INFO] [restartedMain] [55] Starting Tga104G5Application using Java 17.0.1 on DESKTOP-6GVKEF5 with PID 26484 (C:\JavaFramework\eclipse-workspace\TGA104G5_OTHER\target\classes started by User in C:\JavaFramework\eclipse-workspace\TGA104G5_OTHER)
+2023-03-09 21:56:55.150 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-03-09 21:56:55.194 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 21:56:55.194 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 21:56:55.840 [INFO] [restartedMain] [262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-09 21:56:55.841 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09 21:56:55.869 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2023-03-09 21:56:55.878 [INFO] [restartedMain] [262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-09 21:56:55.879 [INFO] [restartedMain] [132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-09 21:56:55.897 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-03-09 21:56:56.414 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-03-09 21:56:56.422 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-03-09 21:56:56.422 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-09 21:56:56.656 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-03-09 21:56:56.663 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-03-09 21:56:56.664 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1469 ms
+2023-03-09 21:56:56.746 [INFO] [restartedMain] [173] Suspicious URL pattern: [/order/**] in context [/TGA104G5], see sections 12.1 and 12.2 of the Servlet specification
+2023-03-09 21:56:56.838 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
+2023-03-09 21:56:57.209 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
+2023-03-09 21:56:57.254 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09 21:56:57.292 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-09 21:56:57.422 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-09 21:56:57.506 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-03-09 21:56:57.965 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09 21:56:57.971 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 21:56:58.250 [WARN] [restartedMain] [219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 21:56:58.637 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-03-09 21:56:58.677 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/TGA104G5'
+2023-03-09 21:56:58.686 [INFO] [restartedMain] [61] Started Tga104G5Application in 3.859 seconds (JVM running for 4.485)
+2023-03-09 21:58:10.360 [INFO] [http-nio-8080-exec-4] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 21:58:10.361 [INFO] [http-nio-8080-exec-4] [525] Initializing Servlet 'dispatcherServlet'
+2023-03-09 21:58:10.362 [INFO] [http-nio-8080-exec-4] [547] Completed initialization in 1 ms
+2023-03-09 21:58:58.463 [ERROR] [http-nio-8080-exec-9] [175] Servlet.service() for servlet [tw.com.tibame.main.OrganizerVerification] in context with path [/TGA104G5] threw exception
+java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because "obj1" is null
+	at tw.com.tibame.main.OrganizerVerification.doGet(OrganizerVerification.java:33)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-09 21:59:49.293 [INFO] [SpringApplicationShutdownHook] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 21:59:49.295 [INFO] [SpringApplicationShutdownHook] [350] HikariPool-1 - Shutdown initiated...
+2023-03-09 21:59:49.300 [INFO] [SpringApplicationShutdownHook] [352] HikariPool-1 - Shutdown completed.
